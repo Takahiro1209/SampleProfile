@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         //ユーザーが設定されていないとき
         if user == nil{
             //デフォルトのユーザー設定
-            user = User(userName: "たかし", message: "やるぜ！", age: "14", iconName: "icon_psyduck.png",backgroundName: "sa_pixar_virtualbg_incredibles2_16x9_149dbf8d.jpeg")
+            user = User(userName: "たける", message: "やるぜ！", age: "14", iconName: "icon_psyduck.png",backgroundName: "sa_pixar_virtualbg_incredibles2_16x9_149dbf8d.jpeg")
         }
         
         profileButton.setImage(UIImage(named: user.iconName), for: .normal)
