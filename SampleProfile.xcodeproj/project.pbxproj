@@ -90,8 +90,7 @@
 				544D3E2327E1BE590094C8A4 /* Source */,
 				543767C427DC539D002CF8EB /* Main.storyboard */,
 				543767C927DC539E002CF8EB /* LaunchScreen.storyboard */,
-				541CEC9B27DE3D6A00B50EA2 /* icons */,
-				54E9BDF227DF118B004090CE /* backgrounds */,
+				544D3E2427E1BFCD0094C8A4 /* Resource */,
 				543767C727DC539E002CF8EB /* Assets.xcassets */,
 				543767CC27DC539E002CF8EB /* Info.plist */,
 			);
@@ -110,6 +109,15 @@
 				54E9BDF027DF0CE5004090CE /* SelectBackgroundViewController.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		544D3E2427E1BFCD0094C8A4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				541CEC9B27DE3D6A00B50EA2 /* icons */,
+				54E9BDF227DF118B004090CE /* backgrounds */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		54E9BDF227DF118B004090CE /* backgrounds */ = {
