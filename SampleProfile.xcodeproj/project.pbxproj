@@ -87,13 +87,7 @@
 		543767BD27DC539D002CF8EB /* SampleProfile */ = {
 			isa = PBXGroup;
 			children = (
-				543767BE27DC539D002CF8EB /* AppDelegate.swift */,
-				543767C027DC539D002CF8EB /* SceneDelegate.swift */,
-				543767C227DC539D002CF8EB /* ViewController.swift */,
-				543767D227DC5BFA002CF8EB /* ProfileViewController.swift */,
-				543767D827DC6FCE002CF8EB /* InputViewController.swift */,
-				543767E027DCCB91002CF8EB /* SelectIconViewController.swift */,
-				54E9BDF027DF0CE5004090CE /* SelectBackgroundViewController.swift */,
+				544D3E2327E1BE590094C8A4 /* Source */,
 				543767C427DC539D002CF8EB /* Main.storyboard */,
 				543767C927DC539E002CF8EB /* LaunchScreen.storyboard */,
 				541CEC9B27DE3D6A00B50EA2 /* icons */,
@@ -102,6 +96,20 @@
 				543767CC27DC539E002CF8EB /* Info.plist */,
 			);
 			path = SampleProfile;
+			sourceTree = "<group>";
+		};
+		544D3E2327E1BE590094C8A4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				543767BE27DC539D002CF8EB /* AppDelegate.swift */,
+				543767C027DC539D002CF8EB /* SceneDelegate.swift */,
+				543767C227DC539D002CF8EB /* ViewController.swift */,
+				543767D227DC5BFA002CF8EB /* ProfileViewController.swift */,
+				543767D827DC6FCE002CF8EB /* InputViewController.swift */,
+				543767E027DCCB91002CF8EB /* SelectIconViewController.swift */,
+				54E9BDF027DF0CE5004090CE /* SelectBackgroundViewController.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		54E9BDF227DF118B004090CE /* backgrounds */ = {
