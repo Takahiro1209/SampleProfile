@@ -21,6 +21,8 @@ class ViewController: UIViewController {
             user = User(userName: "たける", message: "やるぜ！", age: "14", iconName: "icon_psyduck.png",backgroundName: "sa_pixar_virtualbg_incredibles2_16x9_149dbf8d.jpeg")
         }
         
+        //画像の大きさをボタンに合うように変更したいが、できないため保留中
+        profileButton.setTitle("", for: .normal)
         profileButton.setImage(UIImage(named: user.iconName), for: .normal)
         profileButton.imageView?.contentMode = .scaleAspectFit
         profileButton.contentMode = .scaleAspectFit
@@ -37,13 +39,17 @@ class ViewController: UIViewController {
 
     @IBAction func shareProfile(_ sender: Any) {
         if user != nil{
-            let name = user.userName
-            let age = user.age
-            let message = user.message
-            let icon = UIImage(named: "\(user.iconName)")!
-            let background = UIImage(named: "\(user.backgroundName)")!
-            let activityItems = [name, age, message, icon, background] as [Any]
+            let name = "ユーザー名：\(user.userName)"
+            let age = "年齢：\(user.age)"
+            let message = "ステータスメッセージ：\(user.message)"
+            //UIImageを追加すると、「共有に失敗しました」と出るため保留中
+            //let icon = UIImage(named: "\(user.iconName)")!
+            //let background = UIImage(named: "\(user.backgroundName)")!
+            let activityItems = [name, age, message] as [Any]
             let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+            //popoverPCの設定(これをしないとiPadでの起動時にエラーが出る
+            activityVC.popoverPresentationController?.sourceView = self.view
+            activityVC.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.size.width / 2, y: self.view.bounds.size.height / 2, width: 1.0, height: 1.0)
             //Twitter以外を共有から除外
             activityVC.excludedActivityTypes = [
                 UIActivity.ActivityType.addToReadingList,
